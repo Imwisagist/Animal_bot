@@ -8,7 +8,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiohttp import ClientResponse
 from dotenv import load_dotenv
 
-import custom_exceptions
+from others import custom_exceptions
 
 load_dotenv()
 
@@ -64,7 +64,7 @@ async def print_commands(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text="""
 Чтобы получить фото нажмите кнопку
 
-Автор @imwisagist""", reply_markup=keyboard)
+Автор @Imwisagist""", reply_markup=keyboard)
 
 
 @dp.message_handler()
